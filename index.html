@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/ab59ce7f71.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Chats | Kaka Clone</title>
   </head>
 
@@ -19,8 +20,9 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-up"></i>
         <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full"></i>
+        
         <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
       </div>
     </div>
     <header class="header">
@@ -43,23 +45,27 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html"> 
-          <div class="chat__column">
-            <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-            <div class="chat__content">
-              <span class="chat__username">
-                현규
-              </span>
-              <span class="chat__preview">
-                아 섹수하고싶다~
-              </span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    킹동영
+                  </span>
+                  <span class="friend__bottom-text">
+                    앙 기모띠~
+                  </span>
+                </div>
+              </div>
+              <div class="freind__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
-          </div>
-          <div class="chat__column">
-            <span class="chat__timestamp">
-              Yesterday
-            </span>
-          </div>
         </li>
       </ul>
     </main>
@@ -72,6 +78,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div></div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
